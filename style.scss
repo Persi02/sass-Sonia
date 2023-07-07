@@ -1,0 +1,784 @@
+@import './css/variables.scss';
+@import './css/mixins.scss';
+@import './css/composants.scss';
+@import './css/header.scss';
+
+
+
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+// body {
+//     font-size: 100%;
+//     font-family: sans-serif;
+// }
+
+// .header a {
+//     cursor: pointer;
+// }
+
+// /* debut GUI */
+// .container {
+//     padding: 0 32px;
+// }
+
+// .h1,
+// .title-hero {
+//     font-size: 40px;
+//     font-family: Saira;
+//     font-weight: 700;
+//     line-height: 38px;
+//     letter-spacing: 4px;
+//     text-transform: uppercase;
+//     color: #FFF;
+// }
+
+// .h2 {
+//     font-size: 20px;
+//     font-family: Saira;
+//     font-weight: 700;
+//     line-height: 24px;
+//     letter-spacing: 2px;
+//     text-transform: uppercase;
+// }
+
+// .h4 {
+//     color: #FFF;
+//     font-size: 12px;
+//     line-height: 20px;
+// }
+
+// .h2--white {
+//     color: #FFF;
+// }
+
+// .h2--black {
+//     color: #000000;
+// }
+
+
+// p {
+//     font-size: 16px;
+//     font-family: 'roboto';
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 24px;
+
+// }
+
+// .p--white {
+//     color: #FFF;
+// }
+
+// .p--black {
+//     color: #000000;
+// }
+
+// a {
+//     text-decoration: none;
+// }
+
+
+// .img-card {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+// }
+
+// .d-flex {
+//     display: flex;
+// }
+
+/* card */
+
+// .card figure {
+//     position: relative;
+// }
+
+// .like {
+//     position: absolute;
+//     top: 16px;
+//     right: 16px;
+//     background-color: #ffffff;
+//     width: 43px;
+//     height: 43px;
+//     border-radius: 50%;
+//     padding: 13px;
+//     cursor: pointer;
+// }
+
+// .like:hover {
+//     background-color: rgb(197, 64, 64);
+// }
+
+
+// .card-body {
+//     padding-top: 18px;
+//     color: #000;
+//     font-size: 16px;
+//     font-family: 'roboto';
+//     line-height: 20px;
+// }
+
+// .p--grey {
+//     color: #5F5F5F;
+// }
+
+/* fin card */
+/* card story */
+// .card-1 {
+//     position: relative;
+// }
+
+// .card-story-body {
+//     position: absolute;
+//     bottom: 42px;
+//     left: 32px;
+//     z-index: 1;
+//     color: #FFF;
+// }
+
+// .card-story-body ul {
+//     margin-left: 16px;
+// }
+
+// .card-story-body img {
+//     height: 100%;
+//     width: 100%;
+//     object-fit: cover;
+// }
+
+// .card-story-body p {
+//     margin: 3px 0 16px;
+// }
+
+/* fin card story */
+/* btn */
+// .btn {
+//     position: relative;
+//     display: inline-flex;
+//     padding: 14px 8px;
+//     justify-content: center;
+//     align-items: center;
+//     border: none;
+//     color: #FFF;
+//     font-family: 'Saira';
+//     font-weight: 500;
+//     font-size: 16px;
+//     cursor: pointer;
+//     line-height: 20px;
+// }
+
+// .btn:hover {
+//     color: #FFF;
+//     background-color: #1e9bff;
+//     box-shadow: 0 0 35px #1e9bff;
+//     letter-spacing: 0.20em;
+// }
+
+// .btn_s {
+//     width: 314px;
+// }
+
+// .btn_m {
+//     width: 424px;
+// }
+
+// .btn--black {
+//     background: #000;
+// }
+
+// .btn--transparent {
+//     outline: 1px solid #000;
+//     color: #000;
+//     background-color: #FFF;
+// }
+
+// .btn--transparent:hover {
+//     outline: none;
+// }
+
+/* fin btn */
+/* fin GUI */
+/* debut header */
+
+// .header {
+//     width: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 1000;
+// }
+
+// .card-top {
+//     padding: 19px 0;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+
+// .card-menu-l {
+//     align-items: center;
+//     gap: 16px;
+// }
+
+// .menu-1,
+// .menu-2 {
+//     align-items: center;
+//     gap: 9px;
+
+
+// }
+
+// .link-fav:hover {
+//     color: rgb(14, 107, 184);
+// }
+
+// .card-menu-r {
+//     align-items: center;
+//     gap: 19px;
+// }
+
+// .navbar {
+//     padding: 32px 0;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .nav {
+//     display: grid;
+//     grid-template-columns: repeat(8, auto);
+//     gap: 18px;
+//     transform: translateX(-5%);
+// }
+
+// .nav a {
+//     font-size: 12px;
+//     font-family: Saira;
+//     font-weight: 700;
+//     line-height: 16px;
+//     letter-spacing: 1.2px;
+//     color: #FFF;
+// }
+
+// select {
+//     outline: none;
+//     background: transparent;
+//     border: none;
+//     color: #ffffff;
+//     font-size: 12px;
+//     font-weight: bolder;
+//     line-height: 20px;
+//     cursor: pointer;
+// }
+
+// option {
+//     background-color: black;
+//     padding: 5px 0;
+// }
+
+
+
+
+// .nav a:hover {
+//     color: rgb(14, 107, 184);
+
+// }
+
+// .card_search {
+//     gap: 29px;
+//     align-items: center;
+// }
+
+// .search {
+//     border: 1px solid #FFF;
+//     padding: 9px 16px;
+//     gap: 10px;
+// }
+
+// .search input {
+//     background-color: transparent;
+//     border: none;
+//     color: #FFF;
+//     width: 130px;
+//     outline: none;
+// }
+
+// .search input::placeholder {
+//     color: #FFF;
+// }
+
+
+
+/* fin header */
+/* debut section hero */
+// .hero {
+//     width: 100%;
+//     height: 100vh;
+//     background-image: url('../image/desing/Image\ top.png');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: top;
+//     padding: 32px 0px;
+//     position: relative;
+// }
+
+// .hero-container {
+//     width: 100%;
+//     justify-content: space-between;
+//     align-items: flex-end;
+// }
+
+
+
+// .card-title {
+//     color: #FFF;
+// }
+
+/* fin section hero */
+// .story-0 {
+//     padding-top: 70px;
+// }
+
+/* debut section product */
+// .product {
+//     padding: 80px 0px;
+// }
+
+// .flex-product {
+//     align-items: center;
+//     justify-content: space-between;
+// }
+
+// .icon svg path {
+//     fill: #000;
+// }
+
+// .big-card-product {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     max-width: 1302px;
+//     margin: 27px auto 0;
+//     gap: 12px;
+// }
+
+
+
+// .btn-products {
+//     display: flex;
+//     justify-content: center;
+//     grid-column: span 3;
+// }
+
+/* fin section product */
+/* debut section story */
+// .story {
+//     width: 100%;
+//     padding: 214px 0;
+//     background-color: #000;
+//     flex-direction: column;
+//     align-items: flex-end;
+//     justify-content: center;
+// }
+
+// .card-story {
+//     max-width: 1000px;
+// }
+
+// .big-card-story ul {
+//     margin-left: 16px;
+// }
+
+// .big-card-story>* {
+//     margin-bottom: 10px;
+
+// }
+
+// .big-card-story .p-opac {
+//     opacity: 0.5;
+// }
+
+
+
+// .story-2 {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 12px;
+//     padding-top: 60px;
+// }
+
+/* fin story */
+/* debut journey */
+// .journey {
+//     padding: 70px 0;
+// }
+
+// .journey h2 {
+//     margin-bottom: 4px;
+// }
+
+// .journey>p {
+//     margin-bottom: 24px;
+// }
+
+// .big-card-journey {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     max-width: 1302px;
+//     margin: 27px auto 0;
+//     gap: 12px;
+// }
+
+// .btn-journey {
+//     display: flex;
+//     justify-content: center;
+//     grid-column: span 4;
+// }
+
+/* fin journey */
+/* debut journey-2 */
+// .journey-2 {
+//     padding: 0 0 80px;
+
+// }
+
+// .journey-container {
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
+//     gap: 12px;
+// }
+
+// .btn-journey2 {
+//     grid-column: span 12;
+//     justify-content: center;
+// }
+
+// .col-3 {
+//     grid-column: span 3;
+
+// }
+
+// .col-3-3 {
+//     grid-column: 3 /span 3;
+//     flex-direction: column;
+//     justify-content: space-between;
+// }
+
+// .col-7 {
+//     grid-column: span 7;
+// }
+
+// .btn_col12 {
+//     width: 25%;
+//     margin: 73px auto 0;
+//     grid-column: span 12;
+
+// }
+
+/* fin journey-2 */
+/* debut categorie */
+// .categorie {
+
+//     background-color: #000;
+//     width: 100%;
+
+// }
+
+// .categorie-container {
+//     position: relative;
+//     width: 100%;
+//     padding: 136px 102px 85px;
+//     flex-direction: column;
+//     gap: 20px;
+// }
+
+// .card-flotte1,
+// .card-flotte2,
+// .card-flotte3,
+// .card-flotte4,
+// .card-flotte5 {
+//     position: absolute;
+//     top: 25%;
+//     right: 15%;
+//     width: 314px;
+//     transform: translateY(-50%);
+//     height: 376px;
+//     padding: 50px 32px;
+//     gap: 12px;
+// }
+
+// [class*="img-card"] {
+//     width: 100%;
+//     height: 100%;
+//     background: transparent;
+// }
+
+// .img-hover-1:hover {
+//     background-image: url('../image/desing/Image\ \(1\).png');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
+
+// .grand-p {
+//     font-size: 104px;
+//     font-family: 'roboto';
+//     letter-spacing: -3.12px;
+//     text-transform: uppercase;
+//     color: white;
+//     font-weight: 400;
+//     line-height: normal;
+//     cursor: default;
+// }
+
+// .new {
+//     justify-content: flex-end;
+//     margin-right: 16%;
+//     z-index: 100;
+// }
+
+// .grand-p:hover .card-flotte1 {
+//     background-color: white;
+//     background-image: url('../image/desing/Image\ \(11\).png');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
+
+// .grand-p:hover .card-flotte2 {
+//     background-color: white;
+//     background-image: url('../image/desing/Rectangle\ 31\ \(3\).png');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
+
+// .grand-p:hover .card-flotte3 {
+//     background-color: white;
+//     background-image: url('../image/desing/Image\ \(10\).png');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
+
+// .grand-p:hover .card-flotte4 {
+//     background-color: white;
+//     background-image: url('../image/desing/Image\ \(8\).png');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
+
+// .grand-p:hover .card-flotte5 {
+//     background-color: white;
+//     background-image: url('../image/desing/Image\ \(4\).png');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+// }
+
+
+
+// .ready {
+//     margin-left: 10.3%;
+// }
+
+// .chaussures {
+//     margin-left: 0.37%;
+// }
+
+// .acces {
+//     justify-content: flex-end;
+// }
+
+// .sacs {
+//     justify-content: center;
+// }
+
+/* fin category */
+/* debut story-3 */
+// .story-3 {
+//     padding: 50px 0;
+
+// }
+
+// .story-container {
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
+//     gap: 12px;
+// }
+
+// .col-4 {
+//     grid-column: span 4;
+//     position: relative;
+// }
+
+// .card-b {
+//     left: 0;
+//     bottom: 0;
+// }
+
+/* fin story-3 */
+/* debut manistro */
+// .manistro {
+//     padding: 85px 32px 65px;
+//     background-color: #B22B2D;
+//     width: 100%;
+// }
+
+// .card-manistro {
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
+//     grid-template-rows: auto 1fr;
+//     gap: 12px;
+//     padding-top: 27px;
+// }
+
+// .col-2 {
+//     grid-column: span 2;
+// }
+
+// .col-4-8 {
+
+//     grid-column: 8/span 4;
+//     grid-row: 2 /span 1;
+//     color: #FFF;
+
+// }
+
+// .col-4-8 ul {
+//     margin: 24px 0 19px 16px;
+// }
+
+// .col-4-8 p {
+//     line-height: 24px;
+//     font-size: 14px;
+// }
+
+// .signature {
+//     width: 118px;
+//     height: 68px;
+// }
+
+/* fin manistro */
+/* debut footer */
+// footer {
+//     width: 100%;
+//     background-color: #000;
+//     padding: 68px 32px 95px;
+// }
+
+// footer ul {
+//     list-style: none;
+// }
+
+
+
+// .big-card-foot1 {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     gap: 12px;
+// }
+
+// .card-foot {
+//     flex-direction: column;
+// }
+
+// .title-3-foot {
+//     font-size: 12px;
+//     font-family: 'Saira';
+//     font-weight: 700;
+//     line-height: 16px;
+//     letter-spacing: 1.2px;
+//     color: #FFF;
+//     text-transform: uppercase;
+//     margin: 0 0 10px;
+// }
+
+// .p--grey {
+//     color: #5F5F5F;
+//     line-height: 20px;
+
+// }
+
+// footer hr {
+//     color: #ffffff;
+//     opacity: 0.10000000149011612;
+//     background: #FFF;
+//     margin: 57px 0 36px;
+// }
+
+// .big-card-foot2 {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-template-rows: repeat(2, auto);
+//     gap: 41px 12px;
+// }
+
+
+
+// .newsletter {
+
+//     border: 1px solid rgba(255, 255, 255, 0.20000000298023224);
+//     width: 422px;
+//     height: 48px;
+//     align-items: center;
+//     padding: 0 15px;
+
+
+// }
+
+// .card-foot-2 {
+//     grid-column: span 2;
+// }
+
+// .newsletter input {
+//     background: transparent;
+//     outline: none;
+//     border: none;
+//     width: 100%;
+//     color: #FFF;
+//     opacity: 1;
+// }
+
+// .newsletter button {
+//     height: 100%;
+//     padding: 0 20px;
+//     background-color: transparent;
+//     color: #FFF;
+//     font-size: 16px;
+//     font-family: Saira;
+//     font-weight: 500;
+//     line-height: 20px;
+//     border: none;
+//     cursor: pointer;
+// }
+
+// .card-foot--2 {
+//     grid-column: 3;
+//     grid-row: 2;
+//     flex-direction: column;
+
+// }
+
+// .card-foot--3 {
+//     grid-column: 4;
+//     grid-row: 2;
+//     flex-direction: column;
+
+// }
+
+
+// .newsletter button:hover,
+// .card-foot a:hover,
+// .card-foot--3 a:hover,
+// .card-foot--2 a:hover {
+//     color: rgb(14, 107, 184);
+// }
+
+// footer a {
+//     cursor: default;
+// }
